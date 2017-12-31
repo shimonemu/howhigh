@@ -2,8 +2,8 @@
 -- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Dec 24, 2017 at 02:53 PM
+-- Host: 127.0.0.1:3308
+-- Generation Time: Dec 31, 2017 at 11:30 AM
 -- Server version: 5.7.19
 -- PHP Version: 5.6.31
 
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `choice` (
   `is_correct` tinyint(4) NOT NULL,
   `text` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=65 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=69 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `choice`
@@ -65,7 +65,11 @@ INSERT INTO `choice` (`id`, `q_number`, `is_correct`, `text`) VALUES
 (61, 6, 0, 'nemo'),
 (62, 6, 0, 'simba'),
 (63, 6, 1, 'Zoboomafoo'),
-(64, 6, 0, 'avocado');
+(64, 6, 0, 'avocado'),
+(65, 7, 1, 'nahmani'),
+(66, 7, 0, 'moti'),
+(67, 7, 0, 'yoram'),
+(68, 7, 0, 'shmulik');
 
 -- --------------------------------------------------------
 
@@ -90,7 +94,8 @@ INSERT INTO `questions` (`q_number`, `text`) VALUES
 (3, 'in what year israel was declared?'),
 (4, 'which of the following is  a fruit?'),
 (5, 'complete the sentence:\"go to the ant lazy...\"'),
-(6, 'which of the follwing is not an animal?');
+(6, 'which of the follwing is not an animal?'),
+(7, 'kfirs last name');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
