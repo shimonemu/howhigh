@@ -22,7 +22,7 @@ while($row=$result->fetch_assoc()){
 		session_start();
 		$_SESSION["access"]=$db_access;
 		if($_SESSION["access"]==1){
-		echo "hello CEO";
+		echo "Hello CEO";
 		?>
 		<form action="employees.php" method="POST">
 		<button type="submit">employee Report</button><br>
@@ -36,7 +36,7 @@ while($row=$result->fetch_assoc()){
 		<?php
 		}
 		else if($_SESSION["access"]==2){
-		echo "hello manager";
+		echo "Hello manager";
 		?>
 		<form action="daily.php" method="POST">
 		<button type="submit">Daily Report</button><br>
