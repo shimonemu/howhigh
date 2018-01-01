@@ -1,6 +1,14 @@
 <?php
 
 include 'dbh.php';
+session_cache_limiter('private_no_expire'); // works
+session_start();
+if(!isset($_SESSION["access"])){
+	echo 'please log in';
+	header('index.php');
+	exit;
+}
+session_destroy();
 
 $first = $_POST['first_name'];
 $last = $_POST['last_name'];
