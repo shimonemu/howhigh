@@ -67,21 +67,21 @@ h1
 {
 	margin: 10;
 	padding: 30 0 20px;
-	color: #efed40;
+	color: white;
 	text-align: center;	
 }
 h2
 {
 	margin: 10;	
 	padding: 30 0 20px;
-	color: #efed40;
+	color: white;
 	text-align: center;	
 }
 h3
 {
 	margin: 10;
 	padding: 30 0 20px;
-	color: #efed40;
+	color: white;
 	text-align: center;	
 }
 .loginBox p
@@ -116,19 +116,24 @@ h3
 
 .loginBox button[type="submit"]
 {
-	border:none;
-	outline: none;
-	height:40px;
-	color:#fff;
-	font-size:16px;
-	background: #191970;
-	cursor:pointer;
-	border-radius:50px;
+	background-color: white;
+    border-radius: 8px;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #008CBA;
 }
 .loginBox button[type="submit"]:hover
 {
-	background:#efed40;
-	color:#262626;
+	background:#008CBA;
+	color:white;
 }
 		
 
@@ -138,10 +143,6 @@ h3
 <div class="loginBox">
 	<h1>Login</h1>
 	<form action="login.php" method="POST">
-		<p>First Name</p>
-		<input type="text" name="first_name" placeholder="Enter First Name">
-		<p>Last Name</p>
-		<input type="text" name="last_name" placeholder="Enter Last Name">
 		<p>ID number</p>
 		<input type="text" name="id" placeholder="Enter ID Number">
 		<p>Password</p>
@@ -152,7 +153,6 @@ h3
 </div>
 <div class="infoBox">
 	     <h3>Hello Dear Client:</h3>
-
 	    Cyber Security is important because without any understanding or consideration of the issue you are waiting to be attacked.<br> It may not happen now, or next week, but eventually you will be breached and you will have to deal with the fallout.<br>
 	    The latest “Cost of data breach study: Australia”,concluded that in 2014 the likelihood of an Australian company organisations experiencing a data breach involving at least 10,000 records had increased to 18 per cent over a 24 month period.
 </div>

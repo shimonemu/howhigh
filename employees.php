@@ -23,6 +23,30 @@ echo "</table>";
 	<title></title>
 </head>
 <style type="text/css">
+.button{
+background-color: white; /* Green */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+.button1:hover {
+    background-color: #008CBA;
+    color: white;
+}
 	body{  
 		background: url(cyber-10_0.jpg)no-repeat center fixed;
 		background-size: cover;
@@ -51,10 +75,14 @@ echo "</table>";
 </style>
 <body>
 	<div class=buttons>
+		
+		
+		
+		<button class="button button1" type="button" onclick="history.back();">Back</button>
+		
 		<form action="index.php" method="POST">
-		<button type="submit">exit</button><br>
+		<button class="button button1" type="submit">Exit</button><br>
 		</form>
-		<button type="button" onclick="history.back();">Back</button>
 </div>
 </body>
 </html>

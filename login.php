@@ -23,8 +23,8 @@ $result = mysqli_query($conne,$query) or die("bad query:$sql");
 
 }
 if(isset($_POST['submit1'])){
-	$first = $_POST['first_name'];
-	$last = $_POST['last_name'];
+	//$first = $_POST['first_name'];
+	//$last = $_POST['last_name'];
 	$id = $_POST['id'];
 	$pwd = $_POST['pwd'];	
 
