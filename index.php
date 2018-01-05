@@ -137,7 +137,7 @@ h3
 <body>
 <div class="loginBox">
 	<img src="hadas.png" class="user">
-	<h1>Log In Here</h1>
+	<h1>Login</h1>
 	<form action="login.php" method="POST">
 		<p>First Name</p>
 		<input type="text" name="first_name" placeholder="Enter First Name">
@@ -152,9 +152,9 @@ h3
 		
 </div>
 <div class="infoBox">
-	     <h3>Hallo dear client:</h3>
+	     <h3>Hello Dear Client:</h3>
 
-	    cyber Security is important because without any understanding or consideration of the issue you are waiting to be attacked.<br> It may not happen now, or next week, but eventually you will be breached and you will have to deal with the fallout.<br>
+	    Cyber Security is important because without any understanding or consideration of the issue you are waiting to be attacked.<br> It may not happen now, or next week, but eventually you will be breached and you will have to deal with the fallout.<br>
 	    The latest “Cost of data breach study: Australia”,concluded that in 2014 the likelihood of an Australian company organisations experiencing a data breach involving at least 10,000 records had increased to 18 per cent over a 24 month period.
 </div>
 <div class="sqlbox">
@@ -166,7 +166,7 @@ $query="SELECT first_name,last_name,age,grade FROM students";
 #$query= "SELECT COUNT(grade), city FROM students GROUP BY city";
 $result=$conn->query($query);
 
-$conne = mysqli_connect("localhost","root","","HowHigh");
+$conne = mysqli_connect("localhost","root","","howhigh");
 
 #$sql = "SELECT * FROM students WHERE grade>=400";
 $result = mysqli_query($conne,$query) or die("bad query:$query");
