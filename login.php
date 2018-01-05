@@ -21,6 +21,17 @@ $result = mysqli_query($conne,$query) or die("bad query:$sql");
 //$msg= "</table>";
 }
 
+.button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
 if(isset($_POST['submit1'])){
 	$first = $_POST['first_name'];
 	$last = $_POST['last_name'];
