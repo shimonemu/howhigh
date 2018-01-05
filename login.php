@@ -19,19 +19,9 @@ $result = mysqli_query($conne,$query) or die("bad query:$sql");
 // 	echo"<tr><td>{$row['first_name']}</td><td>{$row['last_name']}</td><td>{$row['id']}</td><td>{$row['city']}</td><td>{$row['age']}</td><td>{$row['grade']}</td><tr>";
 // } 
 //$msg= "</table>";
-}
 
-.button{
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
 
+}
 if(isset($_POST['submit1'])){
 	$first = $_POST['first_name'];
 	$last = $_POST['last_name'];
@@ -55,15 +45,16 @@ while($row=$result->fetch_assoc()){
 		if($_SESSION["access"]==1){
 		?>
 		<h1>Hello CEO</h1>
-		<form action="employees.php" method="POST">
-		<button name="employee" value="employee" type="submit">Employees Report</button><br>
+		<h1><form action="employees.php" method="POST">
+		<button class="button button1" name="employee" value="employee" type="submit">Employees Report</button><br>
 		</form>
 		<form action="city.php" method="POST">
-		<button type="submit">City Report</button><br>
+		<button class="button button1" type="submit">City Report</button><br>
 		</form>
 		<form action="best.php" method="POST">
-		<button type="submit">Best Components</button><br>
+		<button class="button button1" type="submit">Best Components</button><br>
 		</form>
+		</h1>
 		<?php
 		}
 		else if($_SESSION["access"]==2){
@@ -107,6 +98,33 @@ while($row=$result->fetch_assoc()){
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <style type="text/css">
+.button {
+    background-color: white; /* Green */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+.button1:hover {
+    background-color: #008CBA;
+    color: white;
+}
+h1 {
+	text-align: center;
+}
 
 body{
 	margin: 0;
