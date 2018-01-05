@@ -43,9 +43,11 @@ while($row=$result->fetch_assoc()){
 		$_SESSION["access"]=$db_access;
 		if($_SESSION["access"]==1){
 		?>
-		<h1>hello CEO</h1>
+		die("
+		<h1>Hello CEO</h1>
+		");
 		<form action="employees.php" method="POST">
-		<button name="employee" value="employee" type="submit">employees Report</button><br>
+		<button name="employee" value="employee" type="submit">Employees Report</button><br>
 		</form>
 		<form action="city.php" method="POST">
 		<button type="submit">City Report</button><br>
@@ -57,7 +59,7 @@ while($row=$result->fetch_assoc()){
 		}
 		else if($_SESSION["access"]==2){
 		?>
-		<h1>hello manager</h1>
+		<h1>Hello Manager</h1>
 		<form action="daily.php" method="POST">
 		<button type="submit">Daily Report</button><br>
 		</form>
@@ -65,21 +67,21 @@ while($row=$result->fetch_assoc()){
 		<button type="submit">Best Components</button><br>
 		</form>
 		<form action="add_ques.php" method="POST">
-		<button type="submit">Add question</button><br>
+		<button type="submit">Add Question</button><br>
 		</form>
 		<form action="ques_table.php" method="POST">
-		<button type="submit">Watch question Table</button><br>
+		<button type="submit">Watch Question Table</button><br>
 		</form>
 		<?php
 		}
 		else if($_SESSION["access"]==3){
 		?>
-		<h1>hello Employee</h1>
+		<h1>Hello Employee</h1>
 		<form action="best.php" method="POST">
 		<button type="submit">Best Components</button><br>
 		</form>
 		<form action="add_parti.php" method="POST">
-		<button type="submit">add participent</button><br>
+		<button type="submit">Add Participent</button><br>
 		</form>
 		<?php
 		}
