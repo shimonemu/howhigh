@@ -145,9 +145,9 @@ h2
 		
 </div>
 <div class="infoBox">
-	     <h3>Hallo dear client:</h3>
+	     <h3>Hello Dear Client:</h3>
 	     <br>
-	    cyber Security is important because without any understanding or consideration of the issue you are waiting to be attacked.<br> It may not happen now, or next week, but eventually you will be breached and you will have to deal with the fallout.<br>
+	    Cyber Security is important because without any understanding or consideration of the issue you are waiting to be attacked.<br> It may not happen now, or next week, but eventually you will be breached and you will have to deal with the fallout.<br>
 	    The latest “Cost of data breach study: Australia”,concluded that in 2014 the likelihood of an Australian company organisations experiencing a data breach involving at least 10,000 records had increased to 18 per cent over a 24 month period.
 </div>
 <div class="sqlbox">
