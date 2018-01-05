@@ -136,7 +136,6 @@ h3
 
 <body>
 <div class="loginBox">
-	<img src="hadas.png" class="user">
 	<h1>Login</h1>
 	<form action="login.php" method="POST">
 		<p>First Name</p>
