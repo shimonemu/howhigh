@@ -43,9 +43,8 @@ while($row=$result->fetch_assoc()){
 		$_SESSION["access"]=$db_access;
 		if($_SESSION["access"]==1){
 		?>
-		die("
-		<h1>Hello CEO</h1>
-		");
+		<h1><img src="http://imagizer.imageshack.com/img922/4954/GxFMhq.jpg" border="0" width="300" height="70"/></a>
+		</h1>
 		<form action="employees.php" method="POST">
 		<button name="employee" value="employee" type="submit">Employees Report</button><br>
 		</form>
