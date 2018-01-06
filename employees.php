@@ -23,6 +23,9 @@ echo "</table>";
 	<title></title>
 </head>
 <style type="text/css">
+h1 {
+	text-align: center;
+}
 .button{
 background-color: white; /* Green */
     border: none;
@@ -75,14 +78,13 @@ background-color: white; /* Green */
 </style>
 <body>
 	<div class=buttons>
-		
-		
-		
+	<h1>	
 		<button class="button button1" type="button" onclick="history.back();">Back</button>
 		
 		<form action="index.php" method="POST">
 		<button class="button button1" type="submit">Exit</button><br>
 		</form>
+	</h1>
 </div>
 </body>
 </html>
