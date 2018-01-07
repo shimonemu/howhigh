@@ -51,29 +51,33 @@ while($row=$result->fetch_assoc()){
 		else if($_SESSION["access"]==2){
 		?>
 		<h1>Hello Manager</h1>
+		<h1>
 		<form action="daily.php" method="POST">
-		<button type="submit">Daily Report</button><br>
+		<button class="button button1" type="submit">Daily Report</button><br>
 		</form>
 		<form action="best.php" method="POST">
-		<button type="submit">Best Components</button><br>
+		<button class="button button1" type="submit">Best Components</button><br>
 		</form>
 		<form action="add_ques.php" method="POST">
-		<button type="submit">Add Question</button><br>
+		<button class="button button1" type="submit">Add Question</button><br>
 		</form>
 		<form action="ques_table.php" method="POST">
-		<button type="submit">Watch Question Table</button><br>
+		<button class="button button1" type="submit">Watch Question Table</button><br>
 		</form>
+		</h1>
 		<?php
 		}
 		else if($_SESSION["access"]==3){
 		?>
 		<h1>Hello Employee</h1>
+		<h1>
 		<form action="best.php" method="POST">
-		<button type="submit">Best Components</button><br>
+		<button class="button button1" type="submit">Best Components</button><br>
 		</form>
 		<form action="add_parti.php" method="POST">
-		<button type="submit">Add Participent</button><br>
+		<button class="button button1" type="submit">Add Participent</button><br>
 		</form>
+		</h1>
 		<?php
 		}
 	}
