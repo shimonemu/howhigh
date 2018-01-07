@@ -12,15 +12,6 @@ $conne = mysqli_connect("localhost","root","","HowHigh");
 
 $sql = "SELECT * FROM students";
 $result = mysqli_query($conne,$query) or die("bad query:$sql");
-
-// echo "<table border ='1'>";
-// echo"<tr><td>First Name</td><td>Last Name</td><td>ID Number</td><td>City</td><td>Age</td><td>Grade</td><tr>";
-// while($row=mysqli_fetch_assoc($result)){
-// 	echo"<tr><td>{$row['first_name']}</td><td>{$row['last_name']}</td><td>{$row['id']}</td><td>{$row['city']}</td><td>{$row['age']}</td><td>{$row['grade']}</td><tr>";
-// } 
-//$msg= "</table>";
-
-
 }
 if(isset($_POST['submit1'])){
 	//$first = $_POST['first_name'];
