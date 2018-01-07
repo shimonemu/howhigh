@@ -49,7 +49,7 @@ function startTimer(duration, display) {
     }, 1000);
 }
 window.onload = function () {
-    var fiveMinutes = 10,
+    var fiveMinutes = 30,
         display = document.querySelector('#time');
     startTimer(fiveMinutes, display);
 };
