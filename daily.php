@@ -6,7 +6,7 @@ $query="select * from students";
 $result=$conn->query($query);
 
 $conne = mysqli_connect("localhost","root","","HowHigh");
-$sql = "SELECT * FROM students";
+$sql = "SELECT first_name,last_name,age,grade FROM students ORDER BY Grade DESC;";
 $result = mysqli_query($conne,$query) or die("bad query:$sql");
 
 echo "<table border ='1'>";
@@ -27,6 +27,30 @@ echo "</table>";
 		background: url(cyber-10_0.jpg)no-repeat center fixed;
 		background-size: cover;
 	}
+.button {
+    background-color: white; /* Green */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+.button1:hover {
+    background-color: #008CBA;
+    color: white;
+}
 .box
 {	
 	display: block;
@@ -52,16 +76,17 @@ echo "</table>";
 		padding: 20px;
 		opacity: 15;
 	}
+
 </style>
 <body>
 	<!-- <a href="#" class="button">
 	<span class="content">Click Me</span>
 	</a> -->
 	 <div class="box">
+		<button class="button button1" type="button" onclick="history.back();">Back</button>
 		<form action="index.php" method="POST">
-		<button type="submit">Exit</button><br>
+		<button class="button button1" type="submit">Exit</button><br>
 		</form>
-		<button type="button" onclick="history.back();">Back</button>
 	</div> 
 </body>
 </html>
