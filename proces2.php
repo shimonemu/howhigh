@@ -2,7 +2,7 @@
 <?php session_start(); ?>
 <?php
 //בדיקת תוצאה
-if(isset($_SESSION['score'])){
+if(!isset($_SESSION['score'])){
     $_SESSION['score'] = 0;
 }
 if($_POST){ 
