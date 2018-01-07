@@ -161,7 +161,7 @@ h3
 	  <?php
 include 'dbh.php';
 #$query="SELECT MAX(age) FROM students";
-$query="SELECT first_name,last_name,age,grade FROM students ORDER BY grade DESC;";
+$query="SELECT first_name,last_name,age,grade FROM students ORDER BY grade DESC LIMIT 8;";
 #$query= "SELECT COUNT(grade), city FROM students GROUP BY city";
 $result=$conn->query($query);
 
