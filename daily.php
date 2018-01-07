@@ -59,7 +59,7 @@ echo "</table>";
 	</a> -->
 	 <div class="box">
 		<form action="index.php" method="POST">
-		<button type="submit">exit</button><br>
+		<button type="submit">Exit</button><br>
 		</form>
 		<button type="button" onclick="history.back();">Back</button>
 	</div> 

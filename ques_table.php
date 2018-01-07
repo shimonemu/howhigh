@@ -53,7 +53,7 @@ echo "</table>";
         <link rel="stylesheet" href="css/style.css" type="text/css"/>
 <body>
 		<form action="index.php" method="POST">
-		<button type="submit">exit</button><br>
+		<button type="submit">Exit</button><br>
 		</form>
 		<button type="button" onclick="history.back();">Back</button>	
 </body>
