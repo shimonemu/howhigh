@@ -80,7 +80,7 @@ window.onload = function () {
                     <input type='submit' value="confirm" />
                     <input type='hidden' name="number" value="<?php echo $number; ?>" />
                     <br>
-                    Time left: <span id="time">03:30</span> minutes!
+                    Time left: <span id="time">00:30</span> minutes!
                 </from>
             </div>
 <!--           <div>Time left: <span id="time">03:30</span> minutes!</div>
