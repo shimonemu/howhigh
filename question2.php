@@ -2,14 +2,12 @@
 <?php session_cache_limiter('private_no_expire');?>
 <?php session_start(); ?>
 <?php
-
-// $iddd=$_POST['name'];
-// $_SESSION['iddd']= $iddd;
-// echo $_SESSION['iddd'];  
+ 
 $number = (int)$_GET['n']; 
-// $query = "SELECT * FROM questions";
-// $results = $mysqli->query($query) or die($mysqli->error.__LINE__);
-// $total = $results->num_rows;
+if($number==1){
+    $_SESSION['score']=0;
+}
+
 $query = "SELECT * FROM questions";
 $results = $mysqli->query($query) or die($mysqli->error.__LINE__);
 $total = $results->num_rows;
